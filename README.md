@@ -3,7 +3,7 @@
 
 This is a React-based e-learning web application focused on **accessibility and inclusive learning**. The platform is built using **Vite** and deployed on **Vercel**.
 
-🔗 **Live Link**: [https://e-learning-ten-alpha.vercel.app/accessibility](https://e-learning-ten-alpha.vercel.app/accessibility)
+🔗 **Live Link**: [https://e-learning-ten-alpha.vercel.app](https://e-learning-ten-alpha.vercel.app)
 
 ---
 
@@ -46,4 +46,4 @@ This is a React-based e-learning web application focused on **accessibility and 
 
 This project is hosted on **Vercel**.  
 Visit the deployed site here:  
-👉 [https://e-learning-ten-alpha.vercel.app/accessibility](https://e-learning-ten-alpha.vercel.app/accessibility)
+👉 [https://e-learning-ten-alpha.vercel.app](https://e-learning-ten-alpha.vercel.app)
