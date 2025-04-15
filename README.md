@@ -1,12 +1,49 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# E-Learning Platform
 
-Currently, two official plugins are available:
+This is a React-based e-learning web application focused on **accessibility and inclusive learning**. The platform is built using **Vite** and deployed on **Vercel**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Link**: [https://e-learning-ten-alpha.vercel.app/accessibility](https://e-learning-ten-alpha.vercel.app/accessibility)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- **Main Pages**:
+  - Home
+  - Courses
+  - Course Detail
+  - Accessibility
+  - Contact
+
+- **Core Components**:
+  - Navbar
+  - Footer
+  - Particles animation background
+
+- **Accessibility Features**:
+  - High contrast mode
+  - Font size adjustment
+  - Specialized accessible course content
+
+- **Styling**:
+  - Each component and page has its own CSS file
+  - Accessibility-focused styles applied throughout
+
+---
+
+## Tech Stack
+
+- React 19
+- Vite
+- React Router
+- Bootstrap
+- tsparticles (for background animations)
+
+---
+
+## Deployment
+
+This project is hosted on **Vercel**.  
+Visit the deployed site here:  
+👉 [https://e-learning-ten-alpha.vercel.app/accessibility](https://e-learning-ten-alpha.vercel.app/accessibility)
