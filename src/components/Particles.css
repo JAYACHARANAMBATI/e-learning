@@ -1,0 +1,49 @@
+.particles-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Make sure the particles container takes up the full space of its parent */
+#tsparticles-default,
+#tsparticles-courses,
+#tsparticles-courseDetail {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Add a subtle gradient overlay to enhance particle visibility */
+.particles-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.03) 100%);
+  pointer-events: none;
+}
+
+/* Animation for particles to fade in smoothly */
+@keyframes particlesFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.particles-background {
+  animation: particlesFadeIn 1.5s ease-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .particles-background {
+    opacity: 0.6; /* Reduce opacity on smaller screens for better content visibility */
+  }
+}

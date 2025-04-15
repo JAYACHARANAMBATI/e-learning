@@ -1,0 +1,271 @@
+/* Base Styles */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #3a86ff;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Contact Methods */
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  background: #f0f7ff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: #3a86ff;
+}
+
+.contact-card h3 {
+  color: #3a86ff;
+  margin-bottom: 0.5rem;
+}
+
+.contact-link {
+  display: inline-block;
+  margin: 0.5rem 0;
+  color: #3a86ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.access-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+/* Contact Form */
+.contact-form-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 3rem;
+}
+
+.contact-form-section h2 {
+  color: #3a86ff;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.submit-button {
+  background: #3a86ff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background: #2667cc;
+}
+
+/* Commitment Section */
+.commitment-section {
+  margin-bottom: 2rem;
+}
+
+.commitment-section h2 {
+  text-align: center;
+  color: #3a86ff;
+  margin-bottom: 2rem;
+}
+
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.commitment-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.commitment-icon {
+  color: #3a86ff;
+  margin-bottom: 1rem;
+}
+
+.commitment-item h3 {
+  color: #3a86ff;
+  margin-bottom: 0.5rem;
+}
+
+/* Accessibility Focus Styles */
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid #3a86ff;
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+.high-contrast .contact-card,
+.high-contrast .contact-form-section,
+.high-contrast .commitment-item {
+  border: 2px solid #0066cc;
+}
+
+.high-contrast input:focus,
+.high-contrast textarea:focus,
+.high-contrast button:focus {
+  outline: 3px solid #ff0;
+}
+
+/* Dark Mode */
+.dark-mode .contact-container {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .contact-card,
+.dark-mode .contact-form-section,
+.dark-mode .commitment-item {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.dark-mode .contact-icon {
+  background: #2d2d2d;
+}
+
+.dark-mode .subtitle,
+.dark-mode .access-note {
+  color: #aaa;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode textarea {
+  background: #2d2d2d;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .commitment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .contact-card {
+    transition: none;
+  }
+}
